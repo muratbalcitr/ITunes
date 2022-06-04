@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.m2lifeApps.hepsiburada.feature.main.domain.SearchViewModel" />
+
+        <variable
+            name="item"
+            type="com.m2lifeApps.data.remote.response.ITuneResponse.Result" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_component_1x"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/white"
+        android:onClick="@{()->viewModel.selectMovies(item)}"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextStyle1b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_component_1x"
+                android:text="@{item.artistName}"
+                tools:text="Test" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/releaseDateTextView"
+                style="@style/TextStyle0"
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_component_1x"
+                tools:text="Test" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

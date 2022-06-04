@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle3">
+        <item name="android:fontFamily">@font/type_regular</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle3b">
+        <item name="android:fontFamily">@font/type_bold</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle2">
+        <item name="android:fontFamily">@font/type_regular</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle2b">
+        <item name="android:fontFamily">@font/type_bold</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle1">
+        <item name="android:fontFamily">@font/type_regular</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle1b">
+        <item name="android:fontFamily">@font/type_bold</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+    <style name="TextStyle0">
+        <item name="android:fontFamily">@font/type_regular</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextStyle0b">
+        <item name="android:fontFamily">@font/type_bold</item>
+        <item name="android:textSize">@dimen/text_size_n1</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:lineSpacingMultiplier">1.12</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <color name="main_text">#252525</color>
+</resources>

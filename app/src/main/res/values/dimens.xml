@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_component_1x">8dp</dimen>
+    <dimen name="margin_component_2x">16dp</dimen>
+    <dimen name="margin_component_3x">24dp</dimen>
+    <dimen name="margin_component_4x">32dp</dimen>
+    <dimen name="margin_component_5x">40dp</dimen>
+    <dimen name="margin_component_6x">48dp</dimen>
+    <dimen name="margin_component_7x">56dp</dimen>
+    <dimen name="margin_component_8x">64dp</dimen>
+    <dimen name="margin_component_9x">72dp</dimen>
+    <dimen name="margin_component_10x">80dp</dimen>
+    <dimen name="margin_component_11x">88dp</dimen>
+    <dimen name="margin_component_12x">96dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+
+    <dimen name="text_size_4">21dp</dimen>
+    <dimen name="text_size_3">18dp</dimen>
+    <dimen name="text_size_2">16dp</dimen>
+    <dimen name="text_size_1">15dp</dimen>
+    <dimen name="text_size_0">14dp</dimen>
+    <dimen name="text_size_n1">11dp</dimen>
+
+
+    <dimen name="app_default_vertical_margin">8dp</dimen>
+    <dimen name="app_default_horizontal_margin">8dp</dimen>
+    <dimen name="app_medium_vertical_margin">16dp</dimen>
+    <dimen name="app_medium_horizontal_margin">16dp</dimen>
+    <dimen name="app_large_vertical_margin">24dp</dimen>
+    <dimen name="app_large_horizontal_margin">24dp</dimen>
+    <dimen name="app_default_elevation">8dp</dimen>
+    <dimen name="app_default_padding">8dp</dimen>
+ </resources>

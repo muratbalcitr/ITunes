@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.m2lifeApps.data.remote.response.ITuneResponse.Result" />
+
+        <variable
+            name="viewModel"
+            type="com.m2lifeApps.hepsiburada.feature.detail.domain.SearchDetailViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_background"
+        android:clickable="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:fadingEdgeLength="132dp"
+            android:requiresFadingEdge="vertical"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_component_2x">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/movie_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/price_background"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        tools:text="USD 122.55" />
+
+                    <View
+                        android:id="@+id/vertical_span"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/movie_title"
+                        style="@style/TextStyle3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{item.trackName}"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@tools:sample/lorem[2]" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/movie_collection_name"
+                        style="@style/TextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_component_1x"
+                        android:text="@{item.collectionName}"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@tools:sample/lorem[2]" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/movie_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_component_1x"
+                        android:layout_marginBottom="@dimen/margin_component_1x"
+
+                        android:alpha="0.7"
+
+                        android:text="@{item.longDescription}"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movie_title"
+                        tools:text="@tools:sample/lorem[15]" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/margin_component_1x"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/movie_actor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/margin_component_1x"
+                            android:text="@{item.artistName}"
+
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            tools:text="@tools:sample/full_names" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="5dp"
+                            android:alpha="0.5"
+                            android:background="@android:color/white" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/movie_genre"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/app_default_padding"
+                            android:text="@{item.primaryGenreName}"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            tools:text="ACTION" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/movie_release_date_textview"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/app_default_padding"
+                            android:text="@{item.primaryGenreName}"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            tools:text="ACTION" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_component_2x"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_video"
+                    android:layout_width="@dimen/margin_component_6x"
+                    android:layout_height="@dimen/margin_component_6x"
+                    android:src="@drawable/ic_play" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</layout>
