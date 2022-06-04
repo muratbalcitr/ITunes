@@ -11,7 +11,7 @@ object DateHelper {
     fun formatServerTime(date: String): String {
         return try {
             val date1 =
-                SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS", Locale.getDefault()).parse(date)
+                SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault()).parse(date)
             val calendar = Calendar.getInstance().apply { time = date1!! }
             val year = calendar.get(Calendar.YEAR)
             val month = String.format("%02d", calendar.get(Calendar.MONTH) + 1)
